@@ -17,12 +17,12 @@
     "autor": "Wamy!Bot",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/JuanDelValle18/Wamy-bot.git"
+      "url": "git+https://github.com/JuanDelValle18/Wamy--bot.git"
     },
     "bugs": {
-      "url": "https://github.com/JuanDelValle18/Wamy-bot/issues"
+      "url": "https://github.com/JuanDelValle18/Wamy--bot/issues"
     },
-  "homepage": "https://github.com/JuanDelValle18/Wamy-bot/blob/main/README.md",
+  "homepage": "https://github.com/JuanDelValle18/Wamy--bot/blob/main/README.md",
   "license": "ISC",
   "dependencies": {
       "@adiwajshing/baileys": "^3.3.0",
