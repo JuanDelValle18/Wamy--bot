@@ -103,7 +103,7 @@ const {
 const vcard = 'BEGIN:VCARD\n' 
             + 'VERSION:3.0\n' 
             + 'FN:Ramiro Ramos\n' 
-            + `ORG: Wamy-bot;\n`
+            + `ORG: Wamy--bot;\n`
             + `TEL;type=CELL;type=VOICE;waid=${owner}:${PhoneNumber('+' + owner).getNumber('international')}\n` 
             + 'END:VCARD' 
 
