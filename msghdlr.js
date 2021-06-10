@@ -1157,7 +1157,7 @@ module.exports = msgHdlr = async (client , mek) => {
                 const jmla = args[1]
                 if (jmla <= 1) return reply(`el límite mínimo de regalos es 1`)
                 if (isNaN(jmla)) return reply(`el límite debe ser un número`)
-                if (!nomerr) return reply(`lo siento formato incorrecto \ n ingresó el parámetro correcto\nejemplo : ${prefix}giftlimit @526444518412 20`)
+                if (!nomerr) return reply(`lo siento formato incorrecto \ n ingresó el parámetro correcto\nejemplo : ${prefix}giftlimit @5216444518412 20`)
                 const cysz = nomerr + '@s.whatsapp.net'
                 var found = false
                         Object.keys(_limit).forEach((i) => {
@@ -1208,7 +1208,7 @@ module.exports = msgHdlr = async (client , mek) => {
                 hasiltf = jumblah - fee
                 addKoinUser(tujuantf, hasiltf)
                 confirmATM(sender, jumblah)
-                addKoinUser('526444518412@s.whatsapp.net', fee)
+                addKoinUser('5216444518412@s.whatsapp.net', fee)
                 reply(`*「 Hecho 」*\n\nLas remesas de dinero han tenido éxito\nde : +${sender.split("@")[0]}\npara : +${tujuan}\nmonto de la transferencia : ${jumblah}\nimpuesto : ${fee}`)
                 break
 				case 'dompet':
