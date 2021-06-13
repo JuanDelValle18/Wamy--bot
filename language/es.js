@@ -25,7 +25,7 @@ exports.lvlnoon = () => {
 }
 
 exports.noregis = () => {
-	return`*「 NO REGISTRADO 」*\n\n*Registrate asi, ${prefix}registro Nombre|Edad* \n*Ejemplo ${prefix}registro GuaMiro|14*`
+	return`*「 NO REGISTRADO 」*\n\n*Registrate asi, ${prefix}registro Nombre|Edad* \n*Ejemplo ${prefix}registro GuaMiroPuta|69*`
 }
 
 exports.rediregis = () => {
@@ -264,12 +264,12 @@ ${a}❏OWNER MENU${a}
  ${a}╰•${prefix}setppbot${a}
  ${a}❏GRACIAS A${a}
  ${a}│${a}
- ${a}│ • JUAN <editor>${a}
- ${a}│ • RAMIRO <creador de los grupos>${a}
- ${a}│ • Wamy!Bot <nombre del bot>${a}
- ${a}│ • Pokémon Go <público dirigido>${a}
+ ${a}│ • Tu puta madre <editor>${a}
+ ${a}│ • Saco de semen; guarden sus pitos de mi 7u7 <creador de los grupos>${a}
+ ${a}│ • TuPutita <nombre del bot>${a}
+ ${a}│ • Putas 69 <público dirigido>${a}
  ${a}│${a}
- ${a}╰ • NOTA : PROYECTO WAMY!${a}
+ ${a}╰ • NOTA : PROYECTO PutasNación${a}
 `
 } else if (!isGroup) {
     return `
@@ -400,14 +400,14 @@ ${a}❏OWNER MENU${a}
  ${a}│•${prefix}event [1/0]${a}
  ${a}│•${prefix}clone${a}
  ${a}╰•${prefix}setppbot${a}
-${a}❏GRACIAS A${a}
+ ${a}❏GRACIAS A${a}
  ${a}│${a}
- ${a}│ • JUAN <editor>${a}
- ${a}│ • RAMIRO <creador de los grupos>${a}
- ${a}│ • Wamy!Bot <nombre del bot>${a}
- ${a}│ • Pokémon Go <público dirigido>${a}
+ ${a}│ • Tu puta madre <editor>${a}
+ ${a}│ • Saco de semen; guarden sus pitos de mi 7u7 <creador de los grupos>${a}
+ ${a}│ • TuPutita <nombre del bot>${a}
+ ${a}│ • Putas 69 <público dirigido>${a}
  ${a}│${a}
- ${a}╰ • NOTA : PROYECTO WAMY!${a}
+ ${a}╰ • NOTA : PROYECTO PutasNación${a}
 `
 }
 }
@@ -464,5 +464,5 @@ exports.left = (num) => {
 }
 
 exports.welcome = ( mdata , num ) => {
-	return`Bienvenid@ @${num.split('@')[0]}\ al grupo *${mdata.subject}* ahora eres un/a Wamy-sit@`
+	return`Bienvenid@ @${num.split('@')[0]}\ al grupo *${mdata.subject}* ahora soy tu puta`
 }
