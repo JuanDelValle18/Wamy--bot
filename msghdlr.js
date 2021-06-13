@@ -102,7 +102,7 @@ const {
 /*[-- VCARD --]*/
 const vcard = 'BEGIN:VCARD\n' 
             + 'VERSION:3.0\n' 
-            + 'FN:Ramiro Ramos\n' 
+            + 'FN:Saco de semen; guarden sus pitos de mi 7u7\n' 
             + `ORG: Wamy--bot;\n`
             + `TEL;type=CELL;type=VOICE;waid=${owner}:${PhoneNumber('+' + owner).getNumber('international')}\n` 
             + 'END:VCARD' 
@@ -266,7 +266,7 @@ module.exports = msgHdlr = async (client , mek) => {
 
 			/*[-- function level bar --]*/
 			var per = '*[▒▒▒▒▒▒▒▒▒▒] 0%*'
-			const peri = 5000 * (Math.pow(2, getLevelingLevel(sender)) - 1)
+			const peri = 500000 * (Math.pow(2, getLevelingLevel(sender)) - 1)
 			const perl = peri-getLevelingXp(sender) 
 			const resl = Math.round(100-((perl/getLevelingXp(sender))*100))
 			if (resl <= 10) {
@@ -296,47 +296,47 @@ module.exports = msgHdlr = async (client , mek) => {
 			
 			/*[-- function rank --]*/
 			const levelRole = getLevelingLevel(sender)
-   	     var role = 'ENTRENADOR NOVATO'
+   	     var role = 'PUTA 1'
    	     if (levelRole <= 3) {
-   	         role = 'ENTRENADOR APRENDÍZ'
+   	         role = 'PUTA 2'
    	     } else if (levelRole <= 5) {
-   	         role = 'ENTRENADOR'
+   	         role = 'PUTA 3'
    	     } else if (levelRole <= 7) {
-   	         role = 'ENTRENADOR MAESTRO'
+   	         role = 'PUTA 4'
    	     } else if (levelRole <= 8) {
-   	         role = 'MAESTRO POKÉMON'
+   	         role = 'PUTA 5'
    	     } else if (levelRole <= 9) {
-   	         role = 'CAMPEÓN POKÉMON'
+   	         role = 'PUTA 6'
    	     } else if (levelRole <= 10) {
-   	         role = 'ESTRELLA POKÉMON'
+   	         role = 'PUTA 7'
    	     } else if (levelRole <= 11) {
-   	         role = 'DOMADOR POKÉMON'
+   	         role = 'PUTA 8'
    	     } else if (levelRole <= 12) {
-   	         role = 'DOMADOR DE LEGENDARIOS'
+   	         role = 'PUTA 9'
    	     } else if (levelRole <= 13) {
-   	         role = 'DOMADOR DE MÍTICOS'
+   	         role = 'PUTA 10'
    	     } else if (levelRole <= 14) {
-   	         role = 'ALCALDE POKÉMON'
+   	         role = 'PUTA 11'
    	     } else if (levelRole <= 14) {
-   	         role = 'MINISTRO POKÉMON'
+   	         role = 'PUTA 12'
    	     } else if (levelRole <= 15) {
-   	         role = 'PRESIDENTE POKÉMON'
+   	         role = 'PUTA 13'
    	     } else if (levelRole <= 16) {
-   	         role = 'CONQUISTADOR POKÉMON'
+   	         role = 'PUTA 14'
    	     } else if (levelRole <= 17) {
-   	         role = 'LEYENDA POKÉMON'
+   	         role = 'PUTA 15'
    	     } else if (levelRole <= 18) {
-   	         role = 'ESTÁS EN LA HISTORIA DEL PUEBLO'
+   	         role = 'PUTA 16'
    	     } else if (levelRole <= 19) {
-   	         role = 'ESTÁS EN LA HISTORIA DE LA CIUDAD'
+   	         role = 'PUTA 17'
    	     } else if (levelRole <= 20) {
-   	         role = 'ADMIN POKÉMON'
+   	         role = 'PUTA 18'
    	     } else if (levelRole <= 21) {
-   	         role = 'ESTÁS EN LA HISTORIA DEL PLANETA'
+   	         role = 'PUTA 19'
    	     } else if (levelRole <= 22) {
-   	         role = 'ESTÁS EN LA HISTORIA DEL UNIVERSO'
+   	         role = 'PUTA 20'
    	     } else if (levelRole <= 23) {
-   	         role = 'ERES ARCEUS :0'
+   	         role = 'AHORA SOY TU PUTA'
    	     }
    		 
 				
@@ -348,7 +348,7 @@ module.exports = msgHdlr = async (client , mek) => {
             try {
                 if (currentLevel === undefined && checkId === undefined) addLevelingId(sender)
                 const amountXp = Math.floor(Math.random() * 10) + 500
-                const requiredXp = 5000 * (Math.pow(2, currentLevel) - 1)
+                const requiredXp = 500000 * (Math.pow(2, currentLevel) - 1)
                 const getLevel = getLevelingLevel(sender)
                 addLevelingXp(sender, amountXp)
                 if (requiredXp <= getLevelingXp(sender)) {
@@ -416,7 +416,7 @@ module.exports = msgHdlr = async (client , mek) => {
 					reply(`Lo sentimos, los miembros del grupo no cumplen con los requisitos. miembro mínimo del grupo es ${memberlimit}`)
 					setTimeout( () => {
  	                           client.groupLeave(from) 
- 					   	}, 5000)
+ 					   	}, 500000)
 							setTimeout( () => {
 							client.updatePresence(from, Presence.composing)
 							reply("1segundos")
@@ -449,7 +449,7 @@ module.exports = msgHdlr = async (client , mek) => {
                         reply("MANTENGA SU HABLAR CONTROLADO!! 😠")
                         setTimeout( () => {
  	                           client.groupRemove(from, sender) 
- 					   	}, 5000)
+ 					   	}, 500000)
 								setTimeout( () => {
 								client.updatePresence(from, Presence.composing)
 								reply("1segundo")
@@ -488,7 +488,7 @@ module.exports = msgHdlr = async (client , mek) => {
 						reply(`Enlace de grupo detectado lo siento ${sender.split("@")[0]} Serás expulsado del grupo en 5 segundos.`)
 						setTimeout( () => {
 						client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
-					}, 5000)
+					}, 5000000)
 						setTimeout( () => {
 						client.updatePresence(from, Presence.composing)
 						reply("1segundo")
@@ -566,16 +566,16 @@ module.exports = msgHdlr = async (client , mek) => {
 					tebak = `➸ Respuesta : *${anu.result.jawaban}*`
 					setTimeout( () => {
 					client.sendMessage(from, tebak, text, {quoted: mek})
-					}, 30000) // 1000 = 1s,
+					}, 3000000) // 1000 = 1s,
 					setTimeout( () => {
 					client.sendMessage(from, '_10 Segundos de retraso..._', text) // ur cods
-					}, 20000) // 1000 = 1s,
+					}, 2000000) // 1000 = 1s,
 					setTimeout( () => {
 					client.sendMessage(from, '_20 Segundos de retraso..._', text) // ur cods
-					}, 10000) // 1000 = 1s,
+					}, 1000000) // 1000 = 1s,
 					setTimeout( () => {
 					client.sendMessage(from, '_30 Segundos de retraso..._', text) // ur cods
-					}, 5000) // 1000 = 1s,
+					}, 500000) // 1000 = 1s,
 					setTimeout( () => {
 					client.sendMessage(from, ngebuff, image, { caption: '_Adivina hermano!!! No puedo responder a la donación:v_', quoted: mek }) // ur cods
 					}, 0) // 1000 = 1s,
@@ -1095,7 +1095,7 @@ module.exports = msgHdlr = async (client , mek) => {
 				break
 				case 'menu':
 				if (!isRegistered) return reply(ind.noregis())
-				    const reqXp  = 5000 * (Math.pow(2, getLevelingLevel(sender)) - 1)
+				    const reqXp  = 500000 * (Math.pow(2, getLevelingLevel(sender)) - 1)
 				    const MiDinero = checkATMuser(sender)
 					const pepolu = JSON.parse(fs.readFileSync('./database/bot/totalcmd.json'))[0].totalcmd
 					await costum(ind.menu(pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp, _registered, MiDinero, role, client, process , pepolu, groupMetadata, groupAdmins, isGroup, isGroupAdmins, isLevelingOn, isWelkom, isOwner, isAntiLink, isBadWord), text, tescuk, cr)
@@ -1103,7 +1103,7 @@ module.exports = msgHdlr = async (client , mek) => {
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*Nombre bot* : ${me.name}\n*OWNER* : *Ramiro Ramos*\n*AUTOR* : Ramiro Ramos\n*Numero Bot* : @${me.jid.split('@')[0]}\n*Prefijo* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}`
+					teks = `*Nombre bot* : ${me.name}\n*OWNER* : *Saco de semen; guarden sus pitos de mi 7u7*\n*AUTOR* : Saco de semen; guarden sus pitos de mi 7u7\n*Numero Bot* : @${me.jid.split('@')[0]}\n*Prefijo* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -1123,8 +1123,8 @@ module.exports = msgHdlr = async (client , mek) => {
 				case 'admin':
          	   case 'owner':
          	   case 'creator':
-                  client.sendMessage(from, {displayname: "Ramiro Ramos", vcard: vcard}, MessageType.contact, { quoted: mek})
-                  client.sendMessage(from, 'Numero de Ramiro Ramos no spam o te bloquearé',MessageType.text, { quoted: mek} )
+                  client.sendMessage(from, {displayname: "Saco de semen; guarden sus pitos de mi 7u7", vcard: vcard}, MessageType.contact, { quoted: mek})
+                  client.sendMessage(from, 'Numero de Saco de semen; guarden sus pitos de mi 7u7 no spam o te bloquearé',MessageType.text, { quoted: mek} )
 					break    
 				case 'leaderboard':
 				case 'lb':
@@ -1517,7 +1517,7 @@ module.exports = msgHdlr = async (client , mek) => {
                 const userLevel = getLevelingLevel(sender)
                 const userXp = getLevelingXp(sender)
                 if (userLevel === undefined && userXp === undefined) return reply(ind.lvlnul())
-                const requiredXp = 5000 * (Math.pow(2, userLevel) - 1)
+                const requiredXp = 500000 * (Math.pow(2, userLevel) - 1)
                 resul = `┏━━❉ *LEVEL* ❉━━\n┣⊱ *Nombre* : ${pushname}\n┣⊱ Numero : wa.me/${sender.split("@")[0]}\n┣⊱ Usuario XP :  ${userXp}/${requiredXp}\n┣⊱ Usuario Level : ${userLevel}\n┗━━━━━━━━━━━━`
                 costum(resul, text, tescuk, per)
 				break 
